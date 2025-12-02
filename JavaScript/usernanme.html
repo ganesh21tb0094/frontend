@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user= "Ganesh"
+        var pass="gan123"
+        var user_Name=prompt("Enter the user name")
+        var pass_Word=prompt("Enter the password")
+        if(user_Name!=="" && pass_Word!==""){
+            if(user_Name===user){
+                if(pass_Word===pass){
+                    console.log("Login Successfully")
+                }else{
+                    console.log("Incorrect Password")
+                }
+
+            }else{
+                console.log("Incorrect User Name")
+            }
+
+        }else{
+            console.log("Please Enter the User Name and Password")
+        }
+    </script>
+    
+</body>
+</html>

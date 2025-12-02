@@ -1,0 +1,10 @@
+.body{
+    height:auto;
+    width:auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: lest 10%;
+}
+#spider{
+    color: red;
+}

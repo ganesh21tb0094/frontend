@@ -1,0 +1,149 @@
+body{
+    font-family: "Montserrat",system-ui,-apple-system,'Segoe UI','Helvetica Neue',Arial,"Roboto"; 
+}
+
+.main-container {
+    width: 1200px;
+    height: 460px;
+    background-color: hsl(29, 25%, 85%);
+    border: 2.5px solid rgb(172, 167, 167);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{ 
+
+    width: 300px;
+    height: 150px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-family: "Montserrat",system-ui,-apple-system,'Segoe UI','Helvetica Neue',Arial,"Roboto";
+    font-weight: bolder; 
+    font-size: 20px;
+    color: hsl(28, 69%, 51%);
+    letter-spacing: 3px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+
+.heading h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 46px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.card-container {
+    width: 1100px;
+    height: 300px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.card-1, .card-2 {
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.outline {
+    width: 420px;
+    height: 200px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 12px;
+}
+
+.client-detail1 {
+    width: 80px;
+    height: 80px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#img1 {
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.client-detail2 {
+
+    width: 220px;
+    height: 80px;
+    border: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 5px;
+}
+
+h4{
+    font-size: 15px;
+    word-spacing: 5px;
+}
+
+h5{
+    font-size: 3px;
+    color: rgb(99, 99, 94);
+}
+
+.client-detail3 {
+
+    width: 90px;
+    height: 80px;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.client-detail3 img{
+
+    width: 75px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.client-detail4 {
+
+    width: 420px;
+    height: 100px;
+    border:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p {
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
+    font-style: italic;
+}

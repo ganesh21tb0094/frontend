@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap- OFFCANVAS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Canvas -->
+    <h1>OffCanvas</h1>
+    <section class="offcanvas2">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            Button with data-bs-target
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top -->
+    <h1>Top Canvas</h1>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop">Top</button>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse expedita fuga distinctio ipsum deleniti, earum
+            minima dicta ea sunt unde magnam itaque qui enim temporibus animi corporis facere sit vel.50
+        </div>
+    </div>
+
+    <!-- Right -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Right-></button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam voluptate necessitatibus ullam vel
+            non maxime fugiat veniam optio doloremque.
+        </div>
+    </div>
+    <!--Bottom -->
+    <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+        aria-controls="offcanvasBottom">Bottom</button>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sapiente optio ducimus nulla error ut itaque
+            molestias ad, quisquam illum? In illum incidunt quisquam, impedit distinctio est magnam ad nemo inventore
+            praesentium error tempore dolore quam quaerat at vel sunt.
+        </div>
+    </div>
+
+
+    <section>
+
+    </section><br><br>
+    <!-- backdrop -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">Enable body scrolling</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop">Enable backdrop (default)</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quo modi reprehenderit facilis itaque
+                non eligendi iusto dicta voluptas magnam blanditiis reiciendis amet quam error, voluptatum totam maiores
+                placeat ducimus dolor vitae mollitia. Ex in laudantium inventore corporis laboriosam quae cupiditate,
+                velit fugit repudiandae aspernatur, eius non, eaque sint laborum? Inventore, vero quos obcaecati aliquam
+                nihil enim fugiat ipsam? Non quo voluptatum adipisci! Eos, voluptatibus. Pariatur debitis aliquam,
+                laudantium quas reiciendis temporibus corrupti! Asperiores, ad tempore. Itaque assumenda delectus error
+                eveniet! Inventore earum voluptatum velit quam tempore dignissimos a aperiam nobis. Illum molestiae
+                soluta quasi eos cum eveniet in eius modi qui hic similique impedit inventore aut debitis sit quidem
+                perferendis ratione tempora, distinctio pariatur dicta aliquam? Magnam tenetur, enim temporibus
+                recusandae sed, dignissimos mollitia rem sint excepturi asperiores incidunt ipsa debitis eius voluptate
+                quam repellendus animi velit modi possimus odit ipsum, totam aliquam nihil! Laudantium ab iste saepe
+                unde tenetur mollitia nisi dolore accusamus possimus, voluptate labore maiores quos eaque ratione totam
+                dolorem facilis iure numquam modi, velit optio? Asperiores cupiditate assumenda saepe tempore maiores,
+                in soluta non esse? Ullam praesentium quibusdam assumenda repellat neque quas, cumque temporibus
+                asperiores deserunt voluptatum obcaecati enim quam consequatur officia mollitia! Iste voluptatem unde
+                dolorem accusantium. Maiores perferendis hic perspiciatis deleniti ut natus nobis, fugit labore rerum
+                eum corporis quo odit culpa eius molestiae rem tempore voluptate alias. Consectetur sed ipsa molestiae
+                sapiente similique deserunt reiciendis nesciunt accusantium! Excepturi doloremque illum deserunt nulla?
+                Vitae neque blanditiis sit maxime? Dolores nisi, quae vel quas totam reiciendis quasi culpa est. Sequi
+                corrupti praesentium voluptates rem, ea, provident quas aspernatur nobis ut expedita asperiores
+                architecto repellat sit adipisci amet qui dicta laboriosam minus? Recusandae, aperiam, iusto repellendus
+                nostrum sunt, soluta odit iste consequuntur amet in quis autem inventore possimus voluptatibus vero
+                delectus porro! Libero eum facere vitae esse est magni iusto exercitationem nam unde ipsum nemo ipsa
+                eaque qui quo laborum ut, assumenda, inventore velit ab! Rem ab laboriosam inventore recusandae, nam hic
+                vero, exercitationem voluptate voluptas quis distinctio. Eveniet fuga explicabo aut, repellat
+                necessitatibus perspiciatis repellendus dolorem distinctio iure! Tenetur architecto vero, consectetur
+                ipsa nam sed placeat voluptatem obcaecati veniam recusandae libero qui distinctio laboriosam dignissimos
+                aliquid ut odio nesciunt voluptas rem commodi, iusto nihil. Repudiandae officiis corrupti veritatis
+                placeat perferendis alias voluptatum ad, fugit accusantium quis minima error cupiditate omnis dolore,
+                dolor, earum minus. Dolor necessitatibus perspiciatis illum nemo voluptatum itaque eos modi tempore
+                nihil! Magni, nemo unde dignissimos amet recusandae alias expedita in hic doloribus aspernatur quaerat,
+                porro fugit nesciunt quis reprehenderit beatae delectus excepturi, vitae deserunt. A, doloribus
+                dignissimos? Laborum sunt asperiores esse quibusdam ipsum assumenda molestiae aperiam, reprehenderit
+                iure reiciendis possimus corporis repudiandae doloremque debitis harum laboriosam repellat rem. Possimus
+                repudiandae impedit iste rem officiis, voluptatum libero dolorem, nisi provident quae, corrupti
+                explicabo earum iusto suscipit distinctio. Iste quas nulla aliquam velit voluptas tenetur natus, tempore
+                quasi quo illo quidem quisquam doloribus dolor? Tenetur pariatur atque ut totam illo fugiat quo
+                voluptate blanditiis sapiente illum! Quae maxime voluptas cum provident laborum!</p>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, accusantium! Numquam expedita
+                excepturi hic fugit tempora assumenda, consequatur debitis vitae, minima laudantium consectetur mollitia
+                eaque et dolor explicabo vero dicta dolorum aliquam? Esse quisquam consequuntur aut hic ducimus,
+                perferendis iste amet. Omnis, molestiae. Laborum temporibus adipisci dolorum tempore distinctio. Quae
+                repudiandae repellat nobis non iste temporibus in rerum cumque delectus sit, necessitatibus molestias
+                quo explicabo debitis sapiente nulla dolore porro harum. Mollitia, distinctio officiis eveniet a quae ex
+                totam et optio, cum tempore eius eum esse quo fuga, sint tenetur. Libero a pariatur quia laboriosam
+                tenetur, impedit id sint maiores voluptatem mollitia repudiandae ab ex, corporis modi blanditiis,
+                dolorum neque. Aut officiis omnis voluptatum nulla quaerat. Ea praesentium autem corporis repellendus
+                placeat quos pariatur. Officia ut mollitia quis ad? Tempora, nostrum! Nostrum exercitationem nihil
+                asperiores autem, deleniti officia. Eius magni recusandae ipsa. Quo saepe id a. Inventore quas facilis
+                libero incidunt aut magni, nesciunt excepturi natus quibusdam, eaque asperiores nostrum dicta cumque
+                numquam, illo iste vitae? Esse quas voluptatum sunt! Eligendi voluptatibus doloremque rerum quam quia
+                saepe non porro deleniti perferendis facere similique dolore alias neque, veritatis maxime aut totam hic
+                delectus esse impedit nihil, quisquam optio corrupti? Rem facilis enim non? Facilis eaque voluptatum
+                animi ratione, qui vitae soluta ad est ab libero praesentium asperiores enim sint? Sint non explicabo
+                perspiciatis neque ab est enim sit amet aut, dolorum ut at. Blanditiis corporis porro commodi, optio
+                fugiat minima expedita? Cumque libero temporibus accusantium odio. Sapiente tempore vitae labore eveniet
+                ab, blanditiis veniam officia dolores voluptatem molestias repellat cumque enim quam adipisci et alias!
+                Temporibus tempore neque et. Odit nam provident molestias excepturi laborum culpa porro molestiae
+                nesciunt, itaque autem sunt, amet, odio sit earum at iure sequi. Optio ipsa rem sapiente deleniti
+                consequatur, adipisci maxime veniam nisi, sequi perspiciatis fugiat. Sapiente nemo sed possimus
+                asperiores soluta adipisci minima expedita, veritatis ex ad quis aperiam pariatur deserunt dicta hic qui
+                sint a! Autem officiis a necessitatibus magnam mollitia, nisi culpa nostrum dolores delectus? Veniam
+                cum, dicta ea ducimus tempore quaerat dolore, necessitatibus recusandae modi, reprehenderit quod itaque
+                obcaecati ab natus tempora debitis minus at pariatur laborum error! Ratione corporis eaque, dicta sit
+                molestiae est obcaecati nobis sunt minima ut repellendus odio non suscipit, voluptatum distinctio
+                laboriosam tempore iste magni eligendi architecto voluptatem sapiente modi asperiores. Magnam quas quae
+                eligendi molestias totam repellendus, et, obcaecati provident explicabo aliquid id corrupti blanditiis
+                veniam. Eveniet ducimus maiores eum blanditiis molestias delectus in! Nostrum odit fugiat quos iusto
+                aperiam, molestiae perferendis, maxime est facilis quas voluptatibus eos tempora qui. Explicabo,
+                blanditiis. Est quidem odit, quod quas tenetur odio voluptates tempore explicabo cum perferendis et
+                neque corrupti facilis, accusamus alias. Beatae magnam aperiam cum rem neque ipsam enim aut modi fuga
+                cumque dicta commodi, nisi officiis, debitis maxime at eius vel accusamus quo tenetur vero. Odio minima
+                modi sequi, ea nostrum quis repellendus vero unde illo in quaerat, provident eveniet nam? Explicabo
+                corporis recusandae obcaecati harum nulla dicta eos nobis vero ad. Minus necessitatibus eius nostrum
+                atque, eos veniam alias cupiditate aperiam repellat ex? Eligendi odit dolor assumenda rem voluptates
+                dolores! Odit, optio! Reiciendis natus suscipit consequuntur quod, soluta molestias unde ea delectus
+                eaque, nam impedit quo commodi eos, blanditiis architecto corrupti dolorem tempore? Reprehenderit sit
+                exercitationem hic soluta expedita alias odit, blanditiis dolorem culpa maiores. Sapiente laudantium
+                nemo, dolorem unde, veniam in voluptates aperiam adipisci a aut deserunt distinctio blanditiis illum
+                sint quaerat provident deleniti perferendis. Praesentium nam consequatur impedit voluptatum voluptatem
+                vitae libero repellat. Dolorem culpa sed recusandae eius quas nesciunt dolor voluptas, id excepturi
+                obcaecati perferendis, natus itaque assumenda? Esse, repudiandae sequi..</p>
+        </div>
+    </div>
+
+    </section>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati molestiae, distinctio doloremque sed ipsa
+        voluptatum tempora, earum ipsam, doloribus similique nisi fugit quam adipisci repellendus quod vel repudiandae
+        in? Laborum nulla nobis sint enim, animi optio temporibus quos libero harum omnis voluptatum iste non totam
+        voluptatem a sunt quia vitae! Perspiciatis accusamus dolor impedit ea itaque, in blanditiis necessitatibus
+        molestias corporis? Accusamus ullam, ducimus itaque minima quae dicta eius expedita aliquid soluta molestias
+        iste quos veritatis repellat unde? Iste vero voluptas doloremque voluptates. Quam exercitationem placeat
+        inventore quisquam iusto laboriosam magnam quis unde quo, deleniti odio maiores totam, a delectus! Esse
+        reprehenderit odio praesentium possimus officiis ipsa error autem quisquam minima, tenetur, nisi quasi voluptas!
+        Repellendus rem animi officia ipsum eius fugit hic quibusdam, voluptate nam quod dignissimos iusto explicabo,
+        maxime magni enim ipsa ex consequuntur aliquid aperiam! Unde, nam explicabo iusto dolorem esse deserunt facere,
+        veniam ipsam, consequuntur placeat maiores praesentium! Illum ipsam magnam officiis distinctio enim corporis
+        tempora accusantium, repudiandae ab nulla sequi eos incidunt, ratione doloribus soluta deserunt asperiores
+        reprehenderit odit! Voluptates saepe eveniet explicabo quisquam, est aut rerum consequatur. Natus velit autem
+        dignissimos dolorum odit tempora earum, veritatis molestiae ratione expedita pariatur at fugiat! Soluta
+        asperiores explicabo quasi officiis assumenda excepturi ad pariatur enim est earum, repellat voluptas non vitae
+        architecto quas laborum quae, eaque nisi laboriosam dolor laudantium inventore. Aspernatur rem blanditiis, optio
+        officia id beatae sequi illo recusandae fuga, commodi nam dicta velit unde, fugiat repellendus nihil. Quo fugiat
+        consectetur soluta sit qui rerum omnis iusto, earum nostrum, modi porro laboriosam, veniam ipsa quis adipisci
+        repellat praesentium iste sequi beatae. Architecto eius alias ducimus maiores ipsa harum vel, temporibus
+        veritatis aliquam impedit earum repudiandae esse sit quos ipsam. Quisquam pariatur voluptate praesentium facilis
+        iure, ipsam ipsum maxime, dolorem eum similique ad magni, et voluptates at necessitatibus obcaecati earum
+        doloribus culpa tenetur! Quibusdam dignissimos consequatur veniam similique ratione qui at deserunt impedit
+        eveniet eos atque quas praesentium reprehenderit dicta ipsa eius repellendus dolore, quam, nesciunt in.
+        Consequatur eos nisi perspiciatis magnam ratione modi labore, at ipsam, perferendis cupiditate explicabo unde
+        dolorum animi sequi. Odio quo laudantium assumenda quam alias nostrum quis, rerum, minima tempora eos iste
+        ducimus libero minus fugit praesentium corporis voluptatem, impedit magni amet ratione obcaecati dolorem
+        recusandae! Aperiam molestiae at sequi quam, reprehenderit, asperiores illo, consequatur unde illum minus cumque
+        officiis? Quo, perspiciatis et, eos asperiores iusto maiores voluptas perferendis vero voluptatum iste nemo.
+        Animi, aspernatur repellat ipsam voluptatem quaerat maiores sunt, laboriosam quasi perferendis possimus minima
+        corrupti. Recusandae, ut quibusdam assumenda, atque aliquid earum quas omnis natus amet illum, officia rerum
+        cupiditate nemo at inventore accusamus corrupti aspernatur. Adipisci perferendis unde, ipsa ratione totam
+        tenetur necessitatibus nemo inventore rerum sequi pariatur eveniet saepe dicta distinctio maxime cum assumenda.
+        Quod modi beatae rerum. Numquam incidunt totam tempora a amet cupiditate non ratione iste et, sequi, fuga,
+        similique esse tempore. Fugiat nesciunt corporis aperiam quam. Deleniti sint quod voluptas quisquam. Dignissimos
+        earum quia nam, aliquam, rem autem, nostrum deleniti id in temporibus libero officiis facere placeat quaerat
+        ullam inventore cupiditate corporis ad fugit omnis. Vel, rem. Quis ea porro sequi debitis libero placeat nostrum
+        recusandae sed dignissimos ullam cumque magni ratione voluptatibus vel blanditiis similique vitae quibusdam ex
+        assumenda molestias, distinctio a! Reprehenderit adipisci, autem cumque magni eligendi inventore sapiente.
+        Fugiat officia esse beatae numquam tempore, dolorum perspiciatis distinctio quisquam error et dolore quaerat
+        voluptatum magni ipsa ea corporis quos soluta aliquam! Libero cumque cupiditate aliquam accusantium velit
+        officiis, illo voluptatibus consequatur distinctio, autem nobis, totam neque. Nesciunt, quos harum. Debitis esse
+        beatae velit, magnam aliquam consectetur eveniet nulla placeat quae, ducimus reiciendis facere eius quibusdam
+        assumenda reprehenderit est facilis hic ipsum distinctio labore veniam, vel praesentium blanditiis voluptas.
+        Maiores odio soluta vero illo a rem ratione ad dolorum eveniet nihil harum, iure culpa architecto obcaecati
+        saepe vitae porro placeat accusamus labore voluptatum accusantium velit, dicta quae. Ducimus harum culpa
+        deserunt iste optio eum velit. Ea officiis corporis, rem placeat reiciendis fuga ad quis nesciunt quae ex porro
+        asperiores cum adipisci ducimus inventore vel earum quasi a necessitatibus molestias sint quidem modi soluta
+        voluptates. Culpa odit corporis minus quam optio unde, temporibus quas consequatur ratione quibusdam laborum
+        saepe libero, alias, nostrum magni error!</p>
+
+
+
+
+
+</body>
+
+</html>

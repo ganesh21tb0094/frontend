@@ -1,0 +1,29 @@
+a:link{
+    
+    color: chartreuse;
+    background-color: rgb(130, 183, 230);
+}
+a:visited{
+    color: blue;
+    background-color: red;
+}
+
+a:active{
+    color:red;
+    background-color: none;
+}
+div{
+    border: 10px;
+}
+
+div a:hover{
+    color: black;
+}
+a.link:hover{
+    font-size:20px;
+}
+/* focus */
+input:focus{
+    background-color: yellow;
+    color: red;
+}

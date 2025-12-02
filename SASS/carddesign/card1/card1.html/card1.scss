@@ -1,0 +1,54 @@
+@import"./variablec.scss";
+h3{
+    color: $txt-color1;
+    font-size: 35px;
+    font-family: "Poppins";
+    text-align: center;
+
+
+}
+body{
+    line-height: 26px;
+    background-color: $txt-color1;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:$txt-color2;
+}
+.main-container{
+    height: 100%;
+    width:100%;
+    background-color: $bg-color2;
+}
+#head2{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: $txt-color2;
+    text-align: center;
+    padding: 5px 0 85px 0;
+}
+.btn{
+    width: 100px;
+    min-height: 45px;
+    line-height: 45px;
+    margin-left: 45%;
+    color: black;
+    background-color: $bg-color1;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-family: "Lato";
+    position: relative;
+}
+
+
+
+// inheritence
+.img-container-main{
+    @extend .main-container;
+    text-align: center;
+    
+}

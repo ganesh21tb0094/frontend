@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. print all elements in array using loop
+
+
+        var myarr = ["hi", "hello", "good", "morning", "welcome"]
+        var len = myarr.length
+        for (let i = 0; i <= len; i++) {
+            console.log(myarr[i])
+        }
+
+        // 2. Print only even numbers from an array.
+
+        var num = [45, 485, 58439, 3858, 84038]
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] % 2 == 0) {
+                console.log(num[i])
+            }
+        }
+
+        // 3. Print only odd numbers from an array.
+
+        var num_1 = [45, 485, 58439, 3858, 84038]
+        for (let i = 0; i < num_1.length; i++) {
+            if (num_1[i] % 2 != 0) {
+                console.log(num_1[i])
+            }
+        }
+
+        //4. Find the sum of all numbers in an array.
+
+        let a = [2, 3, 4, 5, 6, 7, 8]
+        console.log(a)
+        let sum = 0
+        for (let i = 0; i < a.length; i++) {
+            if (i <= a.length) {
+                sum += a[i]
+            }
+        }
+        console.log("sum of the array is " + sum)
+
+        //  5.Find the largest number in an array using a loop.
+        let b = [4354, 34532, 34342, 4452, 24334]
+        console.log(b)
+        let c = b[0]
+        for (let i = 0; i < b.length; i++) {
+            if (b[i] > c) {
+                c = b[i];
+            }
+        }
+        console.log("largest number is  " + c)
+
+        // 6. Find the smallest number in an array using a loop.
+
+        let ab = [4354, 34532, 34342, 4452, 24334]
+        console.log(ab)
+        let bc = b[0]
+        for (let i = 0; i < ab.length; i++) {
+            if (ab[i] < bc) {
+                bc = ab[i];
+            }
+        }
+        console.log("largest number is  " + bc)
+
+        // 7. Count how many positive numbers are in an array.
+
+        let arr = [23, 23, -34, -235, 0, 23484, 34.354]
+        count = 0
+        console.log(arr)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                count++;
+            }
+        }
+        console.log("positive number are  " + count)
+
+        // 8. Count how many negative numbers are in an array.
+        let arr1 = [23, 23, -34, -235, 0, 23484, 34.354]
+        count1 = 0
+        console.log(arr1)
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] < 0) {
+                count1++;
+            }
+        }
+        console.log("positive number are  " + count1)
+
+        // 9. Reverse an array without using the .reverse() method.
+
+        let arr2 = [1, 2, 3, 4, 5];
+        let reversed = [];
+
+        for (let i = arr2.length - 1; i >= 0; i--) {
+            reversed.push(arr2[i]);
+        }
+
+        console.log("Original array:", arr2);
+        console.log("Reversed array:", reversed);
+
+
+        // 10.Count how many even and odd numbers are present in an array.
+
+        let arr_0 = [12, 7, 9, 20, 33, 44, 55];
+        console.log(arr_0)
+
+        let evenCount = 0;
+        let oddCount = 0;
+
+        for (let i = 0; i < arr_0.length; i++) {
+            if (arr_0[i] % 2 === 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+
+        console.log("Even numbers:", evenCount);
+        console.log("Odd numbers:", oddCount);
+
+        // 11. Find and print the index of a specific value in an array.
+
+        let arr_ = [10, 20, 30, 40, 50];
+        let valueToFind = 40;
+        let index = -1;
+
+        for (let i = 0; i < arr_.length; i++) {
+            if (arr_[i] === valueToFind) {
+                index = i;
+                break;
+            }
+        }
+        console.log(arr_)
+        console.log("Value found at index:", index);
+
+
+        // 12. Replace all negative numbers in an array with 0.
+
+        let arr3 = [12, -5, 7, -9, 0, 3, -1];
+        console.log( arr3 );
+        for (let i = 0; i < arr3.length; i++) {
+            if (arr3[i] < 0) {
+                arr3[i] = 0;
+            }
+        }  
+        console.log("Updated array:", arr3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

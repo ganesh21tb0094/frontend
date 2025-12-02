@@ -1,0 +1,39 @@
+.my-para {
+  color: green;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+}
+
+.my-para1 {
+  color: #ff5405;
+  font-size: 30px;
+  font-family: "Lobster", sans-serif;
+  background-color: aquamarine;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  color: red;
+  padding: 40px;
+  font-size: 30px;
+}
+
+.box1, .box3, .box2 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.box2 {
+  background-color: rgb(30, 255, 0);
+}
+
+.box3 {
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */

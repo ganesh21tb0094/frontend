@@ -1,0 +1,50 @@
+h3 {
+  color: #f7f7f7;
+  font-size: 35px;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+body {
+  line-height: 26px;
+  background-color: #f7f7f7;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: grey;
+}
+
+.main-container, .img-container-main {
+  height: 100%;
+  width: 100%;
+  background-color: #222f36;
+}
+
+#head2 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: grey;
+  text-align: center;
+  padding: 5px 0 85px 0;
+}
+
+.btn {
+  width: 100px;
+  min-height: 45px;
+  line-height: 45px;
+  margin-left: 45%;
+  color: black;
+  background-color: #f1d204;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  font-family: "Lato";
+  position: relative;
+}
+
+.img-container-main {
+  text-align: center;
+}/*# sourceMappingURL=card1.css.map */

@@ -1,0 +1,118 @@
+body {
+
+    background-color: #F0F8FF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16.5px;
+    word-spacing: 2.5px;
+}
+
+.main-container {
+
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border: none;
+    border-radius: 15PX;
+}
+
+.sub-container1 {
+
+    padding: 35px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+#para1 {
+
+    line-height: 35px;
+}
+
+button {
+
+    width: 310px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5865F2;
+    margin-top: 20px;
+}
+
+#a-but {
+
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.sub-container2 {
+
+    padding: 35px;
+    line-height: 12px;
+    padding-top: 20px;
+}
+
+#para2 {
+
+    padding-top: 12px;
+    margin-bottom: 0%;
+}
+
+img {
+
+    width: 100px;
+    height: 100px;
+    padding-left: 30px;
+    margin-top: 3px;
+}
+
+.sub-container3 {
+
+    padding: 35px 35px 0px 35px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #5865F2;
+}
+
+#para3 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+hr{
+    border: 2px solid #d4d4da;
+    width: 90%;
+}
+
+.icon {
+
+    padding-left: 35px;
+    padding-top: 25px;
+    padding: 20px 0px 35px 35px;
+    margin-right: 70px;
+}
+
+.fa-linkedin {
+
+    color: #5865F2;
+    margin-right: 18px;
+    font-size: 30px;
+}
+
+.fa-youtube {
+
+    color: #5865F2;
+    font-size: 30px;
+}
+
+.fa-brands:hover {
+
+    color: #0b1799;
+}

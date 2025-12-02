@@ -1,0 +1,44 @@
+@import"./variable.scss";
+.my-para{
+    color: $clr-3;
+    font-size: $fnt-s-3;
+    font-family: $fs-3;
+    background-color: $bg-3;
+
+}
+.my-para1{
+    color:$clr-6;
+    font-size:$fnt-s-1;
+    font-family:$fs-6;
+    background-color: $bg-1;
+    
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    color: red;
+    padding: 40px;
+    font-size: $fnt-s-1;
+  }
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.box2{
+ 
+    @extend .box1;
+    background-color: rgb(30, 255, 0);
+}
+.box3{
+
+    @extend .box1;
+    background-color: aqua;
+}
+

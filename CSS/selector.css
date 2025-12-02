@@ -1,0 +1,28 @@
+.my-content{
+    color: blue;
+    font-size: 20px;
+}
+#id{
+    background-color: blueviolet;
+}
+p,#id{
+    color:rgb(217, 238, 226) ;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(247, 128, 217);
+}
+p1{
+    color: rgb(200, 238, 130);
+}
+div p{
+    background-color: white ;
+    color: black;
+}
+div > p{
+    background-color: white;
+}
+div+p{
+    background-color: yellow;
+}

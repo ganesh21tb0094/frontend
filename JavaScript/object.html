@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var studentDetails = [
+            {
+                name: "demo",
+                regNo: "ST01",
+                mobile: 9464896454,
+                marks: [67, 89, 57, 93, 76]
+
+            },
+            {
+                name: "aaaa",
+                regNo: "ST02",
+                mobile: 9464896454,
+                marks: [80, 78, 45, 99, 89]
+
+
+            }
+        ]
+       console.log(studentDetails)
+
+        for (let i = 0; i < studentDetails.length; i++) {
+            // console.log(studentDetails[i]);
+              let sum=0
+            for(j=0; j < studentDetails[i].marks.length;j++){
+                sum+= studentDetails[i].marks[j];
+                
+
+            }
+           
+            console.log(studentDetails[i].name , sum)
+        }
+    </script>
+
+</body>
+
+</html>

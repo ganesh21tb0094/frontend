@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ["Neo", "Neo 2", 2234, true, "osmos"]
+        // length
+        console.log(arr.length);
+        console.log(arr[3])
+        console.log(arr.at(-4))
+
+        // using loop
+        for (let i = 0; i <= arr.length; i++) {
+            console.log(arr[i])
+        }
+
+         // push - is used to store element in last index
+         arr.push("DJI")
+         console.log(arr,"arr - push")
+
+         
+        // unshift - used to store element in first index
+        arr.unshift("avata")
+        console.log(arr,"arr - unshift")
+
+        // pop() -  used to remove element in last index
+         arr.pop()
+        console.log(arr, "arr - pop");
+
+        // shift() -  used to remove element in first index
+        arr.shift()
+        console.log(arr, "arr - shift");
+
+        let a = ["HTML", "CSS", "JS", "React"];
+        let b = ["Node.js", "Expess.js"];
+
+        const concatedArr = a.concat(b)
+        console.log(concatedArr, "concatedArr");
+
+        console.log(b.toString());
+
+
+        var myNumbers = [1, 2, 3, [4, 5], 7, [28], 57, 29]
+        console.log(myNumbers.flat());
+
+
+        console.log(a.join(" * "));
+
+
+        // The slice() method slices out a piece of an array into a new array:
+
+        var slicedArray = a.slice(1)
+        console.log(slicedArray, "slicedArray");
+
+
+        // The splice() method adds new items to an array.
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.splice(1, 5, "pine", "apple"));
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

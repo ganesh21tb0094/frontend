@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(205, 160, 247);
+
+}
+.main-container{
+    background-color: rgb(205, 160, 247);
+
+}
+
+.con1 .con2 .con3 .con4 .con5{
+    height: auto;
+    width: 70%;
+    margin-left:15%;
+    margin-top:5%;
+    margin-left: 15%;
+    display: inline-block;
+    border: 1px solid rgb(224, 56, 56);
+   
+    background-color: aliceblue;
+}
+.container1{
+     height: auto;
+    width: 50%;
+    margin-left:10%;
+    margin-top:5%;
+    border: 1px solid rgb(233, 223, 223);
+    border-radius: 5px;
+    background-color: aliceblue;
+    
+}
+@media(min-width:900px){
+    .con1 .con2.con3 .con4{
+        width:50%;
+        background-color: rgb(133, 171, 240);
+    }
+    .main-container{
+        background-color: rgb(84, 235, 235);
+    }
+}

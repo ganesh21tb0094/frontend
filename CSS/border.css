@@ -1,0 +1,66 @@
+.p1 {
+    padding: 15px;
+    height: auto;
+    width: 500px;
+    border-top-style: dotted;
+    border-bottom-style: double;
+    border-right-style: double;
+    border-left-style: solid;
+    border-top-color: blue;
+    border-bottom-color: brown;
+    border-left-width: 12px;
+    border-right-width: 12px;
+    border-bottom-width: 12px;
+    border-right-color: green;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.para1 {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 22px;
+    font-size: large;
+    margin-top: 33px;
+    margin-left: 50px;
+    padding: 25px 20px 15px;
+    background-color: blanchedalmond;
+    margin-right: 80px;
+    border: 5px double gray;
+}
+
+.p2 {
+    padding: 15px;
+    height: 100px;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-color: black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.para2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: large;
+    font-weight: weight;
+    font-style: large;
+    font-size: 15px;
+    background-color: rgb(109, 109, 221);
+    box-shadow: 30px 30px 30px rgb(247, 128, 128);
+
+
+}
+
+.p2 {
+    cursor: not-allowed;
+}
+
+.p1 {
+    cursor: pointer
+}
