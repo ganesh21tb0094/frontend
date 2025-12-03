@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = parseInt(prompt("enter your age: "))
+        function vote(a) {
+            if (a >= 18) {
+                return "your are eligble"
+            } else {
+                return "not eligble"
+            }
+        }
+        var b = vote(age)
+        console.log(b)
+
+        var mark = parseInt(prompt("Enter the mark"))
+
+        function grade(mark) {
+            if (mark == 100 && mark >= 90) {
+                return "Grade S"
+            } else if (mark <= 89 && mark >= 80) {
+                return "Grade A"
+            } else if (mark <= 79 && mark >= 70) {
+                return "Grade B"
+            } else if (mark <= 69 && mark >= 60) {
+                return "Grade C"
+            } else if (mark <= 59 && mark >= 50) {
+                return "Grade D"
+            } else if (mark <= 49 && mark >= 40) {
+                return "Grade E"
+            } else {
+                return "Fail"
+            }
+        }
+        var g = grade(mark)
+        console.log(g)
+
+    </script>
+
+</body>
+
+</html>

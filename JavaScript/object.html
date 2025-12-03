@@ -15,29 +15,50 @@
                 regNo: "ST01",
                 mobile: 9464896454,
                 marks: [67, 89, 57, 93, 76]
-
             },
             {
                 name: "aaaa",
                 regNo: "ST02",
                 mobile: 9464896454,
                 marks: [80, 78, 45, 99, 89]
-
-
             }
-        ]
-       console.log(studentDetails)
+        ];
 
+        // Step 1: Calculate total & grade
         for (let i = 0; i < studentDetails.length; i++) {
-            // console.log(studentDetails[i]);
-              let sum=0
-            for(j=0; j < studentDetails[i].marks.length;j++){
-                sum+= studentDetails[i].marks[j];
-                
+            let sum = 0;
 
+            for (let j = 0; j < studentDetails[i].marks.length; j++) {
+                sum += studentDetails[i].marks[j];
             }
-           
-            console.log(studentDetails[i].name , sum)
+
+            studentDetails[i].total = sum;
+
+            // Assign grade
+            if (sum >= 450) studentDetails[i].grade = "A";
+            else if (sum >= 400) studentDetails[i].grade = "B";
+            else if (sum >= 350) studentDetails[i].grade = "C";
+            else if (sum >= 300) studentDetails[i].grade = "D";
+            else studentDetails[i].grade = "F";
+        }
+
+        // Step 2: Rank students (highest total first)
+        let sorted = [...studentDetails].sort((a, b) => b.total - a.total);
+
+        sorted.forEach((student, index) => {
+            student.rank = index + 1;
+        });
+
+        console.log(sorted); // shows rank, grade, totals
+
+        // Display output
+        for (let s of sorted) {
+            console.log(
+                s.name,
+                "| Total:", s.total,
+                "| Grade:", s.grade,
+                "| Rank:", s.rank
+            );
         }
     </script>
 
