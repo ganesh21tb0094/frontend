@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. print all elements in array using loop
+
+        var myarr = ["hi", "hello", "good", "morning", "welcome"];
+
+        var all = (arr) => {
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i]);
+            }
+        }
+        all(myarr);
+
+        // 2. Print only even numbers from an array.
+        var num = [45, 485, 58439, 3858, 84038];
+
+        var even = (numbers) => {
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 === 0) {
+                    console.log(numbers[i]);
+                }
+            }
+        };
+
+        even( num);
+
+         // 3. Print only odd numbers from an array.
+           var num_1 = [45, 485, 58439, 3858, 84038]
+           var odd= (num_1)=> {
+            for (let i = 0; i < num_1.length; i++) {
+                if (num_1[i] % 2 != 0) {
+                    console.log(num_1[i])
+                }
+            }
+        }
+        odd( num_1)
+
+        
+        // 4.Count how many even and odd numbers are present in an array.
+
+        let arr_0 = [12, 7, 9, 20, 33, 44, 55];
+        console.log(arr_0)
+
+        var numCount=(arr_0)=>{
+            
+        let evenCount = 0;
+        let oddCount = 0;
+
+        for (let i = 0; i < arr_0.length; i++) {
+            if (arr_0[i] % 2 === 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+
+        console.log("Even numbers:", evenCount);
+        console.log("Odd numbers:", oddCount);
+
+
+        }
+        numCount(arr_0)
+
+
+        
+        // 5. Replace all negative numbers in an array with 0.
+
+        let arr3 = [12, -5, 7, -9, 0, 3, -1];
+        console.log( arr3 );
+        var update=(arr3)=>{
+            for (let i = 0; i < arr3.length; i++) {
+            if (arr3[i] < 0) {
+                arr3[i] = 0;
+            }
+        }  
+        console.log("Updated array:", arr3);
+
+
+        }
+        update(arr3)
+
+
+         // 6.  Reverse an array without using the .reverse() method.
+
+        let arr2 = [1, 2, 3, 4, 5];
+        let reversed = [];
+         const rev=(arr2,reversed)=>{
+            
+        for (let i = arr2.length - 1; i >= 0; i--) {
+            reversed.push(arr2[i]);
+        }
+
+        console.log("Original array:", arr2);
+        console.log("Reversed array:", reversed);
+
+        }
+        rev(arr2,reversed)
+
+
+    </script>
+
+</body>
+
+</html>
