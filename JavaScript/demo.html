@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // for each
+        var numbers = [10,20,30,40,55]
+        numbers.forEach(num =>{
+            console.log(num);
+            
+        })
+
+        // map() - .map() method is used to transform an array into a new array of the same length, without modifying the original array. 
+        const addElements = numbers.map(element => element * 2)
+        console.log(addElements,"addElements");
+
+        // filter()  -  create a new array containing only the elements from the original array that satisfy a specific condition
+        const filetredData = numbers.filter(e => e > 30)
+        console.log(filetredData,"filetredData");
+
+        const data = numbers.filter(ele => ele % 2 == 0)
+        console.log(data,"data");
+        
+
+        // reduce() - to transform an array into a single value of any type
+        const result = numbers.reduce((acc,cur)=> acc + cur)
+        console.log(result);
+        
+        // some() -  used to efficiently check if at least one element in an array
+
+        const someRes = numbers.some(ele => ele  == 0)
+        console.log(someRes,"some");
+        
+        // every() - test whether all elements in an array satisfy a specific condition 
+        const everyResult = numbers.every(e => e > 0)
+        console.log(everyResult,"every");
+        
+        // for of
+
+        for(const res of numbers){
+            console.log(res);
+        }
+
+        // for in
+        for (const data in numbers){
+            console.log(data, numbers[data]);
+        }
+
+    </script>
+    
+</body>
+</html>
