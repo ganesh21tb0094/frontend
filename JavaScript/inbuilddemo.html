@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // keys(),values(), entries()
+
+        const myObj = {
+            name: "aaaa",
+            email:"aaa@gmail.com",
+            address: "no:10, demo street",
+            mobile: 92184792356
+        }
+        console.log(Object.keys(myObj));
+        console.log(Object.values(myObj));
+        console.log(Object.entries(myObj));
+
+
+        // date()
+
+        const today = new Date()
+        console.log(today,"today");
+
+        console.log(today.getDate())
+        console.log(today.getDay());
+        console.log(today.getMonth());
+        console.log(today.getFullYear());
+        console.log(today.getMilliseconds());
+        console.log(today.getMinutes());
+        today.setFullYear(2000)
+        console.log(today);
+
+        var demoDate = new Date("2000 06 15")
+        console.log(demoDate);
+
+        var currentDate = Date.now()
+        console.log(currentDate);
+        var todayDate = new Date(currentDate)
+        console.log(todayDate);
+        
+        // toLocaleDateString()
+        // console.log(date.toLocaleDateString('en-GB')); 
+        // console.log(date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+ 
+        
+        // math()
+
+        var a = -20
+        console.log(Math.abs(a));
+        console.log(Math.round(6.78));
+        console.log(Math.round(6.38));
+        console.log(Math.floor(4.78));   // 4
+        console.log(Math.ceil(6.78));   // 7
+        console.log(Math.ceil(6.18));   // 7
+        console.log(Math.ceil(6.0));    // 6
+
+        console.log(Math.trunc(6.78));   // 6
+
+        console.log(Math.max(10,4598,234,23));
+        console.log(Math.min(10,4598,234,23));
+
+        console.log(Math.sqrt(16));
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>

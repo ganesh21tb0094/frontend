@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        localStorage.setItem("name", "Ganesh")
+        localStorage.setItem("islogin", true)
+        localStorage.setItem("phone",9514538905)
+
+        var data = localStorage.getItem("name")
+        console.log(data)
+
+        // var remdata = localStorage.removeItem("islogin")
+        // console.log(remdata)
+
+        // session stroage
+
+        sessionStorage.setItem("id", "1234")
+        sessionStorage.setItem("age", "22")
+
+        var sdata = sessionStorage.getItem("age")
+        console.log(sdata)
+
+        var rem_ch_data = sessionStorage.removeItem("id")
+        console.log(rem_ch_data)
+        
+        </script>
+</body>
+</html> **

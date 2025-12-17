@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 style="color: red; text-align: center;"> Welcome to Class </h1>
+    <h1 style="text-align: center;" id="head">Lorem ipsum dolor sit.</h1>
+
+    <p id="myPara" style="font-size: large;">With the HTML DOM, JavaScript can <b>access and change </b>all the elements
+        of an HTML document.</p>
+
+    <p class="myClass" style="font-size: large;">When a web page is loaded, the browser creates a Document Object Model
+        of the page.</p>
+    <p class="types" style="font-size: large;"> The HTML DOM model is constructed as a tree of Objects:
+    </p>
+   
+
+    <div id="image">
+
+    </div>
+
+
+    <div >
+        <img id="img-id" style="width:100%;max-width:550px" src="https://www.w3schools.com/js/pic_htmltree.gif" alt="DOM HTML tree">
+    </div>
+
+     <button type="button" onclick="changeContent()"> Show Content</button>
+
+    <script>
+        // getElementById
+        const myData = document.getElementById("head")
+        console.log(myData, "getElementById");
+        document.getElementById("head").innerHTML = "Document Object Model"
+        
+        // getElementbyClassName
+        const myElement=document.getElementsByClassName("types")
+        console.log(myElement, "getElementByClassName");
+        document.getElementsByClassName("types").innerHTML= "HTML DOM Model tree :"
+
+         function changeContent(){
+        console.log("working");
+
+        document.getElementById("img-id").src = "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg"
+        
+        // document.getElementById("img-id").src = "https://www.w3schools.com/js/pic_htmltree.gif"
+        
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

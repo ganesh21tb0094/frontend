@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">Lorem, ipsum dolor.</p>
+
+
+    <button type="button" onclick="changeContent()"> Change content</button>
+
+
+    <img id="img-id" src="https://preview.colorlib.com/theme/cozastore/images/product-01.jpg" height="200px" width="150px">
+
+    <!-- <p class="my-para">When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+
+
+    <p id="my-content"></p> -->
+
+
+    <input type="text" id="userName">
+    <button type="submit" onclick="submit()">Submit</button>
+
+    <script>
+
+        // getElementById, class name, tag name, queryselector, queryselectorall
+
+
+        // const myData = document.getElementById("demo")
+        // console.log(myData,"getElementById");
+
+
+        // document.getElementById("demo").innerHTML = "Document Object Model"
+        
+        // const tagNameElement = document.getElementsByTagName("p")
+        // console.log(tagNameElement,"tagNameElement");
+        
+        
+        // document.getElementsByClassName("my-para").innerHTML = "When a web page is loaded, the browser creates a Document Object Model of the page."
+
+        // const myData = document.getElementsByClassName("my-para")
+        // console.log(myData,"get by class name");
+        
+        // document.getElementById("my-content").innerHTML = myData[0].innerHTML
+
+
+
+
+       function changeContent(){
+        console.log("working");
+        document.getElementById("demo").innerHTML = "Document Object Model"
+
+        document.getElementById("demo").style.color = "red"
+
+        document.getElementById("img-id").src = "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg"
+        }
+
+
+        function submit(){
+            console.log("dshfsjdf");
+            const data = document.getElementById("userName").value
+            
+            console.log(data,"data");
+            
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

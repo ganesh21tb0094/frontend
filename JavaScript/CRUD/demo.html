@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRUD App</title>
+<style>
+body { font-family: Arial; padding:20px; }
+table { width:100%; border-collapse:collapse; }
+th, td { border:1px solid #ccc; padding:10px; text-align:center; }
+.edit { background:orange; color:white; }
+.delete { background:red; color:white; }
+</style>
+</head>
+<body>
+
+<h2>CRUD with 10 Records</h2>
+
+<form id="userForm">
+<input id="name" placeholder="Name" required>
+<input id="email" placeholder="Email" required>
+<button>Update</button>
+</form>
+
+<table>
+<thead>
+<tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>
+</thead>
+<tbody id="tableBody"></tbody>
+</table>
+
+<script>
+const users = [
+ {id:1,name:"John",email:"john@gmail.com"},
+ {id:2,name:"Alice",email:"alice@gmail.com"},
+ {id:3,name:"Bob",email:"bob@gmail.com"},
+ {id:4,name:"Emma",email:"emma@gmail.com"},
+ {id:5,name:"David",email:"david@gmail.com"},
+ {id:6,name:"Sophia",email:"sophia@gmail.com"},
+ {id:7,name:"Michael",email:"michael@gmail.com"},
+ {id:8,name:"Olivia",email:"olivia@gmail.com"},
+ {id:9,name:"Daniel",email:"daniel@gmail.com"},
+ {id:10,name:"Lily",email:"lily@gmail.com"}
+];
+
+const tableBody = document.getElementById("tableBody");
+const form = document.getElementById("userForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+let editRow = null;
+
+function loadData(){
+ tableBody.innerHTML="";
+ users.forEach(u=>{
+  const row=document.createElement("tr");
+  row.innerHTML=`
+   <td>${u.id}</td>
+   <td>${u.name}</td>
+   <td>${u.email}</td>
+   <td>
+    <button onclick="editUser(this)" class="edit">Edit</button>
+    <button onclick="deleteUser(this)" class="delete">Delete</button>
+   </td>`;
+  tableBody.appendChild(row);
+ });
+}
+
+function editUser(btn){
+ editRow = btn.parentElement.parentElement;
+ nameInput.value = editRow.children[1].innerText;
+ emailInput.value = editRow.children[2].innerText;
+}
+
+form.onsubmit = e=>{
+ e.preventDefault();
+ if(editRow){
+  editRow.children[1].innerText = nameInput.value;
+  editRow.children[2].innerText = emailInput.value;
+  editRow=null;
+  form.reset();
+ }
+}
+
+function deleteUser(btn){
+ btn.parentElement.parentElement.remove();
+}
+
+loadData();
+</script>
+</body>
+</html>
