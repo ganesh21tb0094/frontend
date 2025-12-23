@@ -1,65 +1,97 @@
+// Load users from localStorage
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
 const tableBody = document.getElementById("tableBody");
-const form = document.getElementById("userForm");
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
 
-let editRow = null;
+const addModal = new bootstrap.Modal(document.getElementById("addModal"));
+const editModal = new bootstrap.Modal(document.getElementById("editModal"));
+const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
 
-// 10 Initial Records
-const users = [
-    { id: 1, name: "John", email: "john@gmail.com" },
-    { id: 2, name: "Alice", email: "alice@gmail.com" },
-    { id: 3, name: "Bob", email: "bob@gmail.com" },
-    { id: 4, name: "Emma", email: "emma@gmail.com" },
-    { id: 5, name: "David", email: "david@gmail.com" },
-    { id: 6, name: "Sophia", email: "sophia@gmail.com" },
-    { id: 7, name: "Michael", email: "michael@gmail.com" },
-    { id: 8, name: "Olivia", email: "olivia@gmail.com" },
-    { id: 9, name: "Daniel", email: "daniel@gmail.com" },
-    { id: 10, name: "Lily", email: "lily@gmail.com" }
-];
+// let editUserId = null;
+// let deleteUserId = null;
 
-// Display data (READ)
+// Save users to localStorage
+function saveUsers() {
+ localStorage.setItem("users", JSON.stringify(users));
+}
+console.log(users)
+// Render table
 function loadData() {
-    tableBody.innerHTML = "";
-    users.forEach((user) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td>${user.id}</td>
-            <td>${user.name}</td>
-            <td>${user.email}</td>
-            <td>
-                <button class="edit" onclick="editUser(this)">Edit</button>
-                <button class="delete" onclick="deleteUser(this)">Delete</button>
-            </td>
-        `;
-        tableBody.appendChild(row);
-    });
+ tableBody.innerHTML = ""; 
+
+ users.forEach(user => {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td>${user.id}</td>
+    <td>${user.name}</td>
+    <td>${user.email}</td>
+  
+    <td>
+      <button class="btn btn-warning btn-sm" onclick="openEdit(${user.id})">Edit</button>
+      <button class="btn btn-danger btn-sm" onclick="openDelete(${user.id})">Delete</button>
+    </td>
+  `;
+  tableBody.appendChild(row);
+ });
 }
 
-// EDIT
-function editUser(btn) {
-    editRow = btn.parentElement.parentElement;
-    nameInput.value = editRow.children[1].innerText;
-    emailInput.value = editRow.children[2].innerText;
+//  Add User
+function adduser() {
+ const name = addName.value.trim();
+ const email = addEmail.value.trim();
+//  const mobile= addMobile.valve.trim();
+ if (!name || !email) return alert("All fields required");
+
+ const id = users.length ? users[users.length - 1].id + 1 : 1;
+
+ users.push({ id, name, email,});
+ saveUsers();
+ loadData();
+
+ addName.value = "";
+ addEmail.value = "";
+//  addMobile.value ="";
+ addModal.hide();
+ 
 }
 
-// UPDATE
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    if (editRow) {
-        editRow.children[1].innerText = nameInput.value;
-        editRow.children[2].innerText = emailInput.value;
-        editRow = null;
-        form.reset();
-    }
-});
+//  Open Edit Modal
+function openEdit(id) {
+ const user = users.find(u => u.id === id);
+ editUserId = id;
 
-// DELETE
-function deleteUser(btn) {
-    const row = btn.parentElement.parentElement;
-    tableBody.removeChild(row);
+ editName.value = user.name;
+ editEmail.value = user.email;
+
+ editModal.show();
 }
+
+//  Update User
+document.getElementById("editForm").onsubmit = function (e) {
+ e.preventDefault();
+
+ const user = users.find(u => u.id === editUserId);
+ user.name = editName.value;
+ user.email = editEmail.value;
+
+ saveUsers();
+ loadData();
+ editModal.hide();
+};
+
+//  Open Delete Modal
+function openDelete(id) {
+ deleteUserId = id;
+ deleteModal.show();
+}
+
+//  Confirm Delete
+document.getElementById("confirmDeleteBtn").onclick = function () {
+ users = users.filter(u => u.id !== deleteUserId);
+ saveUsers();
+ loadData();
+ deleteModal.hide();
+};
 
 // Initial Load
 loadData();
